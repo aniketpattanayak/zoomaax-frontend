@@ -1,7 +1,7 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import { FaFacebookF, FaTwitter, FaInstagram, FaLinkedin } from "react-icons/fa";
-
+ 
 const Footer = () => {
   return (
     <footer className="bg-footerColor text-white py-6">

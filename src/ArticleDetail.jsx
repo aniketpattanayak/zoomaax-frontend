@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from "react";
 import { useParams } from "react-router-dom";
 
-const ArticleDetail = () => {
+const ArticleDetail = () => { 
   const { title } = useParams(); // Extract title from the URL
   const [article, setArticle] = useState(null);
   const [loading, setLoading] = useState(true); // Track loading state

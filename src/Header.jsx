@@ -1,7 +1,7 @@
 import React from "react";
 import { Link } from "react-router-dom";
 
-const Header = () => {
+const Header = () => { 
   return (
     <header className="bg-customBlue text-white">
       <div className="container mx-auto flex justify-between items-center py-4 px-6">

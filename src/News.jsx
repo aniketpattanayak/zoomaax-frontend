@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from "react";
 import BlogCard from "./BlogCard";
-
+ 
 const News = () => {
   const [newsArticles, setNewsArticles] = useState([]);
   const [loading, setLoading] = useState(true);

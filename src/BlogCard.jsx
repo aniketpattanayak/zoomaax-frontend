@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import { Link } from "react-router-dom";
-
+ 
 const BlogCard = ({ id, title, description, image, category }) => {
   const [likes, setLikes] = useState(0);
   const [liked, setLiked] = useState(false);

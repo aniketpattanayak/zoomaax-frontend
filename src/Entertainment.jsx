@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from "react";
 import BlogCard from "./BlogCard";
-
+ 
 const Entertainment = () => {
   const [entertainmentArticles, setEntertainmentArticles] = useState([]);
   const [loading, setLoading] = useState(true);

@@ -1,5 +1,5 @@
 import React from 'react';
-
+ 
 const AllNews = () => {
   return (
     <section className="py-10 bg-gray-100">

@@ -1,6 +1,6 @@
 import React from "react";
 import movie from "../src/assets/movie.mp4";
-
+ 
 const Hero = () => {
   return (
     <section className="bg-gray-100 text-gray-800 py-10">

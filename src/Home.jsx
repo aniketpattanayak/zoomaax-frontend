@@ -9,7 +9,7 @@ const Home = () => {
   const [movies, setMovies] = useState([]);
   const [loading, setLoading] = useState(true);
 
-  // Fetch data from the API
+  // Fetch data from the API 
   const fetchData = async () => {
     try {
       const response = fetch('https://zoomaax-backend.onrender.com/api/articles');
