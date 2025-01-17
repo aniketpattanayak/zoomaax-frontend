@@ -12,7 +12,7 @@ const Home = () => {
   // Fetch data from the API
   const fetchData = async () => {
     try {
-      const response = await fetch("http://localhost:3000/api/articles");
+      const response = fetch('https://zoomaax-backend.onrender.com/api/articles');
       const data = await response.json();
 
       console.log("Fetched Data:", data); // Debugging the fetched data
