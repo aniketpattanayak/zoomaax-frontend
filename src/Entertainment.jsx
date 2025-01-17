@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from "react";
 import BlogCard from "./BlogCard";
- 
+
 const Entertainment = () => {
   const [entertainmentArticles, setEntertainmentArticles] = useState([]);
   const [loading, setLoading] = useState(true);
@@ -9,7 +9,7 @@ const Entertainment = () => {
   useEffect(() => {
     const fetchEntertainment = async () => {
       try {
-        const response = await fetch(`${process.env.REACT_APP_API_URL}/api/articles`);
+        const response = await fetch("http://localhost:3000/api/articles");
         const data = await response.json();
 
         // Filter articles by 'Entertainment' category
