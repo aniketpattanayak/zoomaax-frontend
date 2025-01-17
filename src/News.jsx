@@ -9,7 +9,7 @@ const News = () => {
   useEffect(() => {
     const fetchNews = async () => {
       try {
-        const response = await fetch('https://zoomaax-backend.onrender.com/api/articles');
+        const response = await fetch(`${process.env.REACT_APP_API_URL}/api/articles`);
         const data = await response.json();
 
         // Filter articles by 'News' category

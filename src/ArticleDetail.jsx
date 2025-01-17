@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from "react";
 import { useParams } from "react-router-dom";
 
-const ArticleDetail = () => { 
+const ArticleDetail = () => {
   const { title } = useParams(); // Extract title from the URL
   const [article, setArticle] = useState(null);
   const [loading, setLoading] = useState(true); // Track loading state
@@ -11,7 +11,7 @@ const ArticleDetail = () => {
     const fetchArticle = async () => {
       try {
         // Fetch all articles
-        const response = await fetch('https://zoomaax-backend.onrender.com/api/articles');
+        const response = await fetch(`${process.env.REACT_APP_API_URL}/api/articles`);
         if (!response.ok) {
           throw new Error("Failed to fetch articles");
         }
